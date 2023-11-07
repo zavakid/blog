@@ -3,3 +3,4 @@ public/
 *.swp
 .hugo_build.lock
 *.bak
+.obsidian/
