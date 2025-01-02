@@ -21,7 +21,7 @@ mathjax: true
 * 否则，这个系统 $A$ 应该如何设计，才能让我们能够输出 $b$
 * 并且通过这个系统的设计，找出所有可能的 input，让 input的生产也变得更简单些
 
-为了回答上述问题，我们需要去了解矩阵(系统) $A$ 的特性。理解 $A$ 的 Column space 和 Nullspace。
+为了回答上述问题，我们需要去了解矩阵(系统) $A$ 的特性。
 
 ### Column space
 
@@ -66,6 +66,7 @@ Column Space 就是 $A$ 中的每列向量，通过线性组合而成的空间�
 
 ### Row space
 
+$A$ 的 Row space ，就是 $A$ 的所有行(row)  span(张成) 出来的空间。换句话说，就是 $A$的转置 $A^t$ 的 Column space，也就是 $C(A^t)$ 。
 
-### Left Nullspace
-
+### Left nullspace
+对称的， $A$ 的 Left Nullspace，就是$A^t$ 的 Nullspace。
