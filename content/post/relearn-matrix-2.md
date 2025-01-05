@@ -80,7 +80,7 @@ $A$ 的 Row space ，就是 $A$ 的所有行(row)  span(张成) 出来的空间�
 * row space  维度为 $r$,  nullspace 维度为 $(n-r)$ ，互相垂直。
 * column space 维度为 $r$，  left nullspace 维度为 $(m-r)$，互相垂直。
 
-![[4-base-sub-space.png]]
+![[/static/4-base-sub-space.png]]
 
 上面这张图的是从几何观点来看矩阵 $A$ 的，把$A$ 当成系统，输入 $x$，则可以被拆解为 row space 的线性组合 加上 Nullspace中的线性组合。对于在 row space上的成分，会被映射到右边的 column space上，而 null space上的成分，则被转换成 $0$。
 
