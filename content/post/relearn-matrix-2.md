@@ -82,7 +82,7 @@ $A$ 的 Row space ，就是 $A$ 的所有行(row)  span(张成) 出来的空间�
 
 ![](https://github.com/user-attachments/assets/6be75c77-ba2f-4727-9e06-105eecb1604f)
 
-上面这张图的是从几何观点来看矩阵 $A$ 的，把$A$ 当成系统，输入 $x$，则可以被拆解为 row space 的线性组合 加上 Nullspace中的线性组合。对于在 row space上的成分，会被映射到右边的 column space上，而 null space上的成分，则被转换成 $0$。
+上面这张图的是从几何观点来看矩阵 $A$ 的，把$A$ 当成系统，输入 $x$，则可以 你被拆解为 row space 的线性组合 加上 Nullspace中的线性组合。对于在 row space上的成分，会被映射到右边的 column space上，而 null space上的成分，则被转换成 $0$。
 
 
 ### 附：找 nullspace 的步骤
