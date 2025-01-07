@@ -9,13 +9,45 @@ categories:
 draft: false
 mathjax: true
 ---
-正交向量的内积 $v^tw = 0$。
-如果两个子空间正交，就意味着分别来自两个子空间中的任意两个向量是正交的。 
+两个向量的夹角为： 
+$$
+\cos\theta = \frac{a^Tb}{\parallel{a}\parallel\parallel{b}\parallel}
+$$   
 
-结合前面说的[四个子空间](https://www.foldright.com/post/relearn-matrix-2/)，矩阵为 $A_{m\times n}$ 的 row space 与 nullspace 正交，且维度互补，分别为 $r$ 和 $n-r$；column space 和 left  nullspace 正交，且维度互补，分别为 $r$ 和 $m-r$。
-也就是说， 任意的向量 x，在空间 $R^n$ 中，都可以分解为 $x_{row} + x_{null}$ 。
+两个向量正交，则内积 $a^Tb = 0$。
 
-向量 $b$ 投影到向量 $a$ 形成的向量 $p = a(a^tb/a^ta)$ 
+向量 $b$ 投影到向量 $a$，可以形象的理解成 $b$ 会按照与 $a$ 垂直的方向投射到 $a$ 上。所以 $b$ 投影到 $a$ 的结果是一个与 $a$ 方向一样的向量，我们称为 $p = \hat{x}a$，其中 $\hat{x}$ 为标量。 因此有 $(b-p) \perp a$，也就是他们的内积为 0： $a^T(b - \hat{x}a) = 0$ 。可以进一步推导出 $a^Tb - \hat{x}a^Ta = 0$ ，因此：
+$$
+\hat{x} = \frac{a^Tb}{a^Ta}
+$$
+投影结果 $p$ 就为：
+$$
+p = \hat{x}a = \frac{a^Tb}{a^Ta} a = a \frac{a^Tb}{a^Ta} = \frac{aa^T}{a^Ta}b
+$$
+
+换个视角，如果把投影的过程当成一个线性系统，也就是输入为 $b$，输出结果为 $p$，投影过程所代表的转换矩阵为 $P$，则： $Pb = p$ 。通过代入计算可得：
+
+$$
+P = \frac{aa^T}{a^Ta}
+$$
+
+**$P$ 就称为投影矩阵**。
+
+如果向量的维度为 $n$， 则 $P$ 为 $n\times{n}$ 矩阵。$P$ 投影矩阵的 rank 为 1，因为上面式子揭露了矩阵是由向量 $a$ 和 $a^T$ 相乘决定的。并且 nullspace 的 basis 为 $n-1$ 个，row space 和 column space 的 basis 为 1 个，都为 $a$， left nullspace 的 basis 也为 $n-1$ 个。
+
+**同时$P$为对称矩阵**，即： $P^T = P$。证明：
+$$
+P^T = \left(\frac{aa^T}{a^Ta}\right)^T = \frac{(a^T)^Ta^T}{a^Ta} = \frac{aa^T}{a^Ta} = P
+$$
+
+**同时还有 $P^2 = P$。** 在几何上很容易理解，投影之后再投影，对输入肯定是没有任何作用了。证明：
+
+$$
+P^2 = \frac{aa^T}{a^Ta}\frac{aa^T}{a^Ta} = \frac{aa^Taa^T}{a^Taa^Ta}
+= \frac{a(a^Ta)a^T}{(a^Ta)a^Ta} = \frac{aa^T}{a^Ta} = P
+$$
+
+$P$ 也没有逆矩阵，因为 $P$ 是 singlar 的， rank 不为 $n$。几何上可以理解为，向量 $b$ 被投影之后，再也还原不回来了。
 
 
 
