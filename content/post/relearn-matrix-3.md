@@ -15,5 +15,7 @@ mathjax: true
 结合前面说的[四个子空间](https://www.foldright.com/post/relearn-matrix-2/)，矩阵为 $A_{m\times n}$ 的 row space 与 nullspace 正交，且维度互补，分别为 $r$ 和 $n-r$；column space 和 left  nullspace 正交，且维度互补，分别为 $r$ 和 $m-r$。
 也就是说， 任意的向量 x，在空间 $R^n$ 中，都可以分解为 $x_{row} + x_{null}$ 。
 
+向量 $b$ 投影到向量 $a$ 形成的向量 $p = a(a^tb/a^ta)$ 
+
 
 
