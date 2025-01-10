@@ -72,10 +72,10 @@ $$
 
 
 同时 $(A^TA)$ 的 nullspace， 也就是 $A$ 的 nullspace，证明如下：
-$$\begin{align}
+$$\begin{align}、
   &			&Ax &= 0 & A的\ nullspace\ 性质
-\\&\Rightarrow   &A^T(Ax) &= 0 & 左边同时乘\ A^T
-\\&\Rightarrow   &(A^TA)x &= 0 & 结合律
+\\\\&\Rightarrow   &A^T(Ax) &= 0 & 左边同时乘\ A^T
+\\\\&\Rightarrow   &(A^TA)x &= 0 & 结合律
 \end{align}$$
 上面式子说明，$A$ 的 nullspace 是 $A^TA$ 的 nullspace。
 
@@ -83,12 +83,12 @@ $$\begin{align}
 
 $$\begin{align}
 	&		    &(A^TA)x &= 0 &(A^TA) 的\ nullspace\ 性质 
-\\&\Rightarrow  &x^T(A^TA)x &= 0 &左边同时乘 x^T
-\\&\Rightarrow  &(x^TA^T)Ax &= 0 &结合律
-\\&\Rightarrow  &(Ax)^TAx &= 0 &利用\ (Ax)^T = x^TA^T
-\\&\Rightarrow  &\parallel Ax \parallel^2 &= 0 & 利用A^TA=\parallel A \parallel^2
-\\&\Rightarrow  &\parallel Ax \parallel &= 0
-\\&\Rightarrow  &Ax&= 0
+\\\\&\Rightarrow  &x^T(A^TA)x &= 0 &左边同时乘 x^T
+\\\\&\Rightarrow  &(x^TA^T)Ax &= 0 &结合律
+\\\\&\Rightarrow  &(Ax)^TAx &= 0 &利用\ (Ax)^T = x^TA^T
+\\\\&\Rightarrow  &\parallel Ax \parallel^2 &= 0 & 利用A^TA=\parallel A \parallel^2
+\\\\&\Rightarrow  &\parallel Ax \parallel &= 0
+\\\\&\Rightarrow  &Ax&= 0
 \end{align}$$
 
 上面式子说明，$(A^TA)$ 的 nullspace 是 $ax$ 的 nullspace 。
