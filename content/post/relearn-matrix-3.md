@@ -72,7 +72,7 @@ $$
 
 
 同时 $(A^TA)$ 的 nullspace， 也就是 $A$ 的 nullspace，证明如下：
-$$\begin{align}、
+$$\begin{align}
   &			&Ax &= 0 & A的\ nullspace\ 性质
 \\\\&\Rightarrow   &A^T(Ax) &= 0 & 左边同时乘\ A^T
 \\\\&\Rightarrow   &(A^TA)x &= 0 & 结合律
