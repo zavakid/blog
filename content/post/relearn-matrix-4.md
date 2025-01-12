@@ -9,7 +9,6 @@ categories:
 draft: false
 mathjax: true
 ---
-
 ### Orthonormal Bases
 
 对于一个给定的空间 $R^n$，有无限多的基。 每组基都可以线性组合成该空间的向量。
